@@ -1,7 +1,11 @@
-const numbers = [1,2,3,1,4];
+const courses = [
 
-console.log(numbers.indexOf(1, 2));
-console.log(numbers.lastIndexOf(1));
+    {id: 1, name: 'a' },
+    {id: 2, name: 'b' },
 
-console.log(numbers.indexOf(1) !== -1);
-console.log(numbers.includes(1));
+];
+const course = courses.find(function(course) {
+    return course.name === 'nos';
+});
+
+console.log(course);
