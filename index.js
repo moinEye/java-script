@@ -1,6 +1,8 @@
-const first = [1, 2, 3];
-const second = [4,5,6];
+const numbers = [1, 2, 3];
 
-const combined = [...first, 'a', ...second, 'b'];
+for (let number of numbers)
+    console.log(number);
 
-const copy = [...combined];
+numbers.forEach(function(number){
+    console.log(number);
+});
