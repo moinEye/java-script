@@ -1,9 +1,6 @@
-let numbers = [1, 2, 3, 4];
-let another = numbers;
+const first = [1, 2, 3];
+const second = [4,5,6];
 
-while (numbers.length > 0)
-numbers.pop()
+const combined = [...first, 'a', ...second, 'b'];
 
-console.log(numbers);
-console.log(another);
-
+const copy = [...combined];
