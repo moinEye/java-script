@@ -1,11 +1,11 @@
-const courses = [
+const numbers = [1, 2, 3, 4];
 
-    {id: 1, name: 'a' },
-    {id: 2, name: 'b' },
+// const last = numbers.pop();
 
-];
-const course = courses.find(function(course) {
-    return course.name === 'nos';
-});
+// const first = numbers.shift()
+// console.log(first);
 
-console.log(course);
+
+
+numbers.splice(2, 1);
+console.log(numbers);
