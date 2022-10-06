@@ -1,11 +1,9 @@
-const numbers = [1, 2, 3, 4];
+let numbers = [1, 2, 3, 4];
+let another = numbers;
 
-// const last = numbers.pop();
+while (numbers.length > 0)
+numbers.pop()
 
-// const first = numbers.shift()
-// console.log(first);
-
-
-
-numbers.splice(2, 1);
 console.log(numbers);
+console.log(another);
+
