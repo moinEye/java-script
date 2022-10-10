@@ -1,11 +1,7 @@
-const numbers = [1, -1, 2, 3];
+const numbers = [1, -1, 2, 3]
 
-const filtered = numbers.filter(n => n >= 0);
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue
+);
 
-const items = filtered.map(n => {
-    const obj = { value: n};
-    return obj;
-});
+console.log(sum);
 
-
-console.log(items);
