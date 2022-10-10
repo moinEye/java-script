@@ -1,10 +1,6 @@
-const numbers = [1, 2, 3];
+const numbers = [2, 3, 1];
+numbers.sort();
+console.log(numbers);
 
-const joined = numbers.join(',')
-console.log(joined);
-
-const message = 'This is my first message';
-const parts = message.split(' ');
-console.log(parts);
-
-parts.join(' ')
+numbers.reverse();
+console.log(numbers);
