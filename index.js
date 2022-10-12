@@ -1,13 +1,16 @@
 const numbers = [1,2,3,4,7];
 
-console.log(numbers.includes(20));
+const output = except(numbers, [1,2]);
 
-function includes(array, searchElement) {
+console.log(output);
 
+function except(array, excluded){
+
+    const output = [];
     for (let element of array)
-        if (element === searchElement)
-        return true;
-
+        if (!excluded.includes(element))
+            output.push(element)
+    return output;
 }
 
 
