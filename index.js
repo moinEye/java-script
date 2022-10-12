@@ -1,14 +1,16 @@
-const numbers = arrayFromRange(1, 7);
+const numbers = [1,2,3,4,7];
 
-console.log(numbers);
+console.log(numbers.includes(20));
 
-function arrayFromRange(min, max) {
+function includes(array, searchElement) {
 
-    const output = [];
-
-    for (let i = min; i <= max; i ++)
-        output.push(i);
-    return output;
-
+    for (let element of array)
+        if (element === searchElement)
+        return true;
 
 }
+
+
+
+
+
